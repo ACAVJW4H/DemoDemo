@@ -1,6 +1,6 @@
 
 <html>
-
+<meta charset="ISO-256-383">
 <head>
 <style>
 body{
@@ -201,6 +201,13 @@ img{
   border-radius: 1%;
 }
 
+
+div.relative {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
 </style>
 </head>
 <body onload="startTime()">
@@ -270,7 +277,7 @@ img{
           <div class="date">
             <div class="datecont">
               <div id="date"></div>
-              <div id="day"></div>
+              <pre> <div id="day"></div> </pre>
               <div id="month"></div>
               <h2> Bugünkü toplantıların </h2>
               <h3> Ar-Ge 14:30</h3>
@@ -278,8 +285,6 @@ img{
             </tr>
             </div>
           </div>
-
-
 
           <div class="Foto">
           <img src="http://192.168.1.23:9000/stream.mjpeg" height="216px" width="288px"></img>
@@ -297,7 +302,12 @@ img{
         </div>--->
       </div>
     </div>
+
   </div>
+  <div class="relative"><img src="StromaLogoTransparent.png" height="96px" width="175px"></img> </div>
+
+
+
 </body>
 <script type="text/javascript">
 let cardElement = document.querySelector(".card");
@@ -312,7 +322,7 @@ function startTime() {
     var weekday = new Array();
     weekday[0] =  "Pazar";
     weekday[1] = "Pazartesi";
-    weekday[2] = "Salı &nbsp &nbsp ";
+    weekday[2] = "Salı   ";
     weekday[3] = "Çarşamba";
     weekday[4] = "Perşembe";
     weekday[5] = "Cuma";
